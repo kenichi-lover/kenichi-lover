@@ -1,0 +1,121 @@
+<!-- 声明文档类型为HTML5 -->
+<!DOCTYPE html>
+<!-- HTML根元素，指定语言为中文 -->
+<html lang="zh">
+<!-- 头部区域，包含元数据 -->
+<head>
+    <!-- 指定字符编码为UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- 设置视口，用于响应式设计 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 页面标题 -->
+    <title>张芷馨的个人网站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- 身体区域，包含可见的页面内容 -->
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#portfolio">作品集</a></li>
+                <li><a href="#contact">联系我</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>张芷馨</h1>
+            <p>摄影师 | 旅行爱好者</p>
+            <div class="ai-assistant-container">
+                <div class="ai-function-btn" id="faq-btn">常见问题</div>
+                <p class="ai-assistant" id="ai-assistant-text">AI助手</p>
+                <div class="ai-function-btn" id="contact-btn">提出问题</div>
+            </div>
+            <!-- AI对话框保持不变 -->
+            <div id="ai-chat-box" class="ai-chat-box">
+                <div id="chat-messages" class="chat-messages"></div>
+                <div class="chat-input">
+                    <input type="text" id="user-input" placeholder="输入您的问题...">
+                    <button id="send-message">发送</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2>关于我</h2>
+                    <p>我是一名热爱摄影和旅行的自由职业者。通过镜头，我捕捉世界的美丽瞬间，分享我的所见所闻。</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/image-7.jpeg" alt="张芷馨的头像" class="profile-photo">
+                </div>
+            </div>
+            <!-- 添加readme.md的内容 -->
+            <div class="readme-content">
+                <h3>欢迎来到我的个人网站！</h3>
+                <p>这里是我展示我的摄影作品和分享我的旅行经历的地方。</p>
+                <p>通过我的镜头，我希望能够捕捉世界的美丽瞬间，并与大家分享我的所见所闻。</p>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>作品集</h2>
+            <div class="photo-gallery">
+                <img src="images/image-2.jpeg" alt="作品2">
+                <img src="images/image-3.jpeg" alt="作品3">
+                <img src="images/image-4.jpeg" alt="作品4">
+            </div>
+            <!-- 添加readme.md的内容 -->
+            <div class="readme-content">
+                <p>在这里，你可以找到我最新的摄影作品。我的作品涵盖了风景、人像、街拍等多个领域。每张照片背后都有一个独特的故事，我希望通过这些照片能够带给你不同的视角和感受。</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>联系我</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="您的姓名" required>
+                <input type="email" name="email" placeholder="您的邮箱" required>
+                <textarea name="message" placeholder="您的留言" required></textarea>
+                <button type="submit">发送</button>
+            </form>
+            <!-- 添加readme.md的内容 -->
+            <div class="readme-content">
+                <p>如果你对我的作品感兴趣，或者想要合作，欢迎随时与我联系。你可以通过以下方式找到我：</p>
+                <ul>
+                    <li>邮箱：zhangzixin@example.com</li>
+                    <li>Instagram: @zxphoto</li>
+                    <li>Twitter: @zx_photographer</li>
+                </ul>
+                <p>期待与你的交流！</p>
+            </div>
+        </section>
+
+        <!-- 在main的末尾添加固定对话框结构 -->
+        <div id="fixed-dialog" class="fixed-dialog">
+            <div class="dialog-header">
+                <h2>欢迎来到我的网站</h2>
+                <button id="close-dialog">&times;</button>
+            </div>
+            <div class="dialog-content">
+                <p>你好！我是张芷馨。欢迎访问我的个人网站。如果你有任何问题，请随时与我联系。</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 张芷馨. 保留所有权利。</p>
+        <div class="social-links">
+            <!-- <a href="#" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a>
+            <a href="#" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a> -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<!-- HTML文档结束 -->
+</html>
